@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8607473822D9BAFB005B6DA7 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607473722D9BAFB005B6DA7 /* BookCell.swift */; };
 		864B42BE22D98EE2000EF81E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42BD22D98EE2000EF81E /* AppDelegate.swift */; };
 		864B42C322D98EE2000EF81E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864B42C122D98EE2000EF81E /* Main.storyboard */; };
 		864B42C522D98EE5000EF81E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864B42C422D98EE5000EF81E /* Assets.xcassets */; };
@@ -14,11 +15,11 @@
 		864B42D022D99245000EF81E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42CF22D99245000EF81E /* Book.swift */; };
 		864B42D222D9925D000EF81E /* BookHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42D122D9925D000EF81E /* BookHandler.swift */; };
 		864B42D522D99AE7000EF81E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42D422D99AE7000EF81E /* MainViewController.swift */; };
-		864B42D722D99C47000EF81E /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42D622D99C47000EF81E /* DownloadImage.swift */; };
 		864B42D922D9A51A000EF81E /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42D822D9A51A000EF81E /* Extends.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8607473722D9BAFB005B6DA7 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		864B42BA22D98EE2000EF81E /* google-books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "google-books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		864B42BD22D98EE2000EF81E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864B42C222D98EE2000EF81E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		864B42CF22D99245000EF81E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		864B42D122D9925D000EF81E /* BookHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHandler.swift; sourceTree = "<group>"; };
 		864B42D422D99AE7000EF81E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		864B42D622D99C47000EF81E /* DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImage.swift; sourceTree = "<group>"; };
 		864B42D822D9A51A000EF81E /* Extends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extends.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +43,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8607473422D9BACC005B6DA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864B42D322D992EF000EF81E /* Book */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8607473522D9BADB005B6DA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				864B42D422D99AE7000EF81E /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8607473622D9BAEB005B6DA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8607473722D9BAFB005B6DA7 /* BookCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		864B42B122D98EE2000EF81E = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				864B42BD22D98EE2000EF81E /* AppDelegate.swift */,
-				864B42D422D99AE7000EF81E /* MainViewController.swift */,
 				864B42D822D9A51A000EF81E /* Extends.swift */,
-				864B42D622D99C47000EF81E /* DownloadImage.swift */,
-				864B42D322D992EF000EF81E /* Book */,
+				8607473622D9BAEB005B6DA7 /* View */,
+				8607473522D9BADB005B6DA7 /* Controller */,
+				8607473422D9BACC005B6DA7 /* Model */,
 				864B42C122D98EE2000EF81E /* Main.storyboard */,
 				864B42C422D98EE5000EF81E /* Assets.xcassets */,
 				864B42C622D98EE5000EF81E /* LaunchScreen.storyboard */,
@@ -158,8 +182,8 @@
 				864B42D222D9925D000EF81E /* BookHandler.swift in Sources */,
 				864B42D922D9A51A000EF81E /* Extends.swift in Sources */,
 				864B42BE22D98EE2000EF81E /* AppDelegate.swift in Sources */,
+				8607473822D9BAFB005B6DA7 /* BookCell.swift in Sources */,
 				864B42D022D99245000EF81E /* Book.swift in Sources */,
-				864B42D722D99C47000EF81E /* DownloadImage.swift in Sources */,
 				864B42D522D99AE7000EF81E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//Cria modelo do Livro
 struct Book: Codable {
     var title:String?
     var authors:[String]?
@@ -21,3 +21,4 @@ struct Book: Codable {
     var link:URL?
     var thumbnail:URL //imagem
 }
+
