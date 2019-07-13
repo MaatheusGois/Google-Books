@@ -16,7 +16,6 @@
 		864B42D522D99AE7000EF81E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42D422D99AE7000EF81E /* MainViewController.swift */; };
 		864B42D722D99C47000EF81E /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42D622D99C47000EF81E /* DownloadImage.swift */; };
 		864B42D922D9A51A000EF81E /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42D822D9A51A000EF81E /* Extends.swift */; };
-		864B42DB22D9ACBD000EF81E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B42DA22D9ACBD000EF81E /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		864B42D422D99AE7000EF81E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		864B42D622D99C47000EF81E /* DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImage.swift; sourceTree = "<group>"; };
 		864B42D822D9A51A000EF81E /* Extends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extends.swift; sourceTree = "<group>"; };
-		864B42DA22D9ACBD000EF81E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				864B42D422D99AE7000EF81E /* MainViewController.swift */,
 				864B42D822D9A51A000EF81E /* Extends.swift */,
 				864B42D622D99C47000EF81E /* DownloadImage.swift */,
-				864B42DA22D9ACBD000EF81E /* TestViewController.swift */,
 				864B42D322D992EF000EF81E /* Book */,
 				864B42C122D98EE2000EF81E /* Main.storyboard */,
 				864B42C422D98EE5000EF81E /* Assets.xcassets */,
@@ -158,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864B42DB22D9ACBD000EF81E /* TestViewController.swift in Sources */,
 				864B42D222D9925D000EF81E /* BookHandler.swift in Sources */,
 				864B42D922D9A51A000EF81E /* Extends.swift in Sources */,
 				864B42BE22D98EE2000EF81E /* AppDelegate.swift in Sources */,

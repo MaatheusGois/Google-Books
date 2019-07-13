@@ -18,30 +18,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Test View Controller-->
-        <scene sceneID="sFN-CM-syh">
-            <objects>
-                <viewController id="neA-lV-E2h" customClass="TestViewController" customModule="google_books" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UKV-qI-rZM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFa-tQ-F9Y">
-                                <rect key="frame" x="87" y="188" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Gak-oz-jJQ"/>
-                    </view>
-                    <connections>
-                        <outlet property="imagem" destination="JFa-tQ-F9Y" id="Lwp-xn-yRw"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cK9-Ob-Tsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-649" y="-8"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="roa-In-QiI">
             <objects>
