@@ -72,7 +72,7 @@
                                                 <constraint firstItem="M8h-i8-sfR" firstAttribute="top" secondItem="LKq-KG-6ro" secondAttribute="top" constant="20.5" id="kwa-xd-mbk"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="mH0-eY-PJy" firstAttribute="centerY" secondItem="wZk-JI-4yg" secondAttribute="centerY" id="wEf-Mz-2RC"/>
