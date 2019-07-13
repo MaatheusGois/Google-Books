@@ -85,8 +85,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="d01-W8-OLo" id="CXa-SQ-g6A"/>
-                                    <outlet property="delegate" destination="d01-W8-OLo" id="kd4-ve-DAl"/>
+                                    <outlet property="delegate" destination="d01-W8-OLo" id="Tqf-tf-SzA"/>
                                 </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdV-sP-NM9">
