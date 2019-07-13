@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d01-W8-OLo">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Compact-Display-Regular.otf">
+            <string>SFCompactDisplay-Regular</string>
+        </array>
+        <array key="rockwell-condensed.ttf">
+            <string>Rockwell-Condensed</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="sFN-CM-syh">
+            <objects>
+                <viewController id="neA-lV-E2h" customClass="TestViewController" customModule="google_books" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKV-qI-rZM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFa-tQ-F9Y">
+                                <rect key="frame" x="87" y="188" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gak-oz-jJQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagem" destination="JFa-tQ-F9Y" id="Lwp-xn-yRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cK9-Ob-Tsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-649" y="-8"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="roa-In-QiI">
+            <objects>
+                <viewController storyboardIdentifier="main" id="d01-W8-OLo" customClass="MainViewController" customModule="google_books" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eY8-Nd-IWP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProtoypeCell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="43" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6fD-Uc-TZD">
+                                <rect key="frame" x="0.0" y="128" width="414" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PrototypeCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PrototypeCell" rowHeight="101" id="wZk-JI-4yg" customClass="BookCell" customModule="google_books">
+                                        <rect key="frame" x="0.0" y="43" width="414" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wZk-JI-4yg" id="LKq-KG-6ro">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="mH0-eY-PJy">
+                                                    <rect key="frame" x="8" y="11.5" width="83" height="78"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="78" id="Mb7-u9-vfK"/>
+                                                        <constraint firstAttribute="width" constant="83" id="toL-e4-JYm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descricao" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97x-fY-0le">
+                                                    <rect key="frame" x="99" y="40" width="295" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="nWB-p5-kMh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFCompactDisplay-Regular" family="SF Compact Display" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8h-i8-sfR">
+                                                    <rect key="frame" x="99" y="20.5" width="295" height="24"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Condensed" family="Rockwell Condensed" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="97x-fY-0le" firstAttribute="leading" secondItem="M8h-i8-sfR" secondAttribute="leading" id="BF5-sq-tAg"/>
+                                                <constraint firstAttribute="trailing" secondItem="M8h-i8-sfR" secondAttribute="trailing" constant="20" id="LWK-7w-eKm"/>
+                                                <constraint firstItem="97x-fY-0le" firstAttribute="leading" secondItem="mH0-eY-PJy" secondAttribute="trailing" constant="8" id="OUg-WF-oyQ"/>
+                                                <constraint firstItem="97x-fY-0le" firstAttribute="bottom" secondItem="LKq-KG-6ro" secondAttribute="bottomMargin" id="WGE-io-EIk"/>
+                                                <constraint firstAttribute="trailing" secondItem="97x-fY-0le" secondAttribute="trailing" constant="20" id="d0h-L3-KbB"/>
+                                                <constraint firstItem="mH0-eY-PJy" firstAttribute="leading" secondItem="LKq-KG-6ro" secondAttribute="leading" constant="8" id="k9U-G5-wjT"/>
+                                                <constraint firstItem="M8h-i8-sfR" firstAttribute="top" secondItem="LKq-KG-6ro" secondAttribute="top" constant="20.5" id="kwa-xd-mbk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mH0-eY-PJy" firstAttribute="centerY" secondItem="wZk-JI-4yg" secondAttribute="centerY" id="wEf-Mz-2RC"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="descricao" destination="97x-fY-0le" id="RZ8-nm-EUU"/>
+                                            <outlet property="imagem" destination="mH0-eY-PJy" id="GcX-OG-s3V"/>
+                                            <outlet property="nome" destination="M8h-i8-sfR" id="pH1-jE-BZJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="d01-W8-OLo" id="CXa-SQ-g6A"/>
+                                    <outlet property="delegate" destination="d01-W8-OLo" id="kd4-ve-DAl"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdV-sP-NM9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Agency-Regular" family="Agency" pointSize="28"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Livros" id="2Ly-K7-99H"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXR-E2-pO7">
+                                <rect key="frame" x="20" y="88" width="289" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4p-7i-j9G">
+                                <rect key="frame" x="325" y="87" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Procurar"/>
+                                <connections>
+                                    <action selector="botaoDePesquisar:" destination="d01-W8-OLo" eventType="touchUpInside" id="VSd-hS-zjS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6fD-Uc-TZD" firstAttribute="top" secondItem="cdV-sP-NM9" secondAttribute="bottom" constant="40" id="JJ9-0v-Kqz"/>
+                            <constraint firstItem="6fD-Uc-TZD" firstAttribute="trailing" secondItem="tMz-4l-QPH" secondAttribute="trailing" id="eME-kZ-Sfg"/>
+                            <constraint firstItem="cdV-sP-NM9" firstAttribute="trailing" secondItem="tMz-4l-QPH" secondAttribute="trailing" id="ibT-Q0-4Xt"/>
+                            <constraint firstItem="cdV-sP-NM9" firstAttribute="top" secondItem="tMz-4l-QPH" secondAttribute="top" id="nUL-x8-jZx"/>
+                            <constraint firstItem="6fD-Uc-TZD" firstAttribute="leading" secondItem="tMz-4l-QPH" secondAttribute="leading" id="umd-6x-fUX"/>
+                            <constraint firstAttribute="bottom" secondItem="6fD-Uc-TZD" secondAttribute="bottom" id="w1d-VK-HMk"/>
+                            <constraint firstItem="cdV-sP-NM9" firstAttribute="leading" secondItem="tMz-4l-QPH" secondAttribute="leading" id="xKy-UK-EKA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tMz-4l-QPH"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="barraDePesquisar" destination="KXR-E2-pO7" id="h1Y-mi-zuk"/>
+                        <outlet property="tableView" destination="6fD-Uc-TZD" id="F9q-ZN-T7X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifh-7o-zaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518.84057971014499" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check" width="200" height="200"/>
+    </resources>
+</document>
