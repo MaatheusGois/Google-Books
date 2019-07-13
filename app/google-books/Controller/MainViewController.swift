@@ -21,6 +21,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         guard let pesquisa:String = barraDePesquisar.text else {
             return
         }
+        self.showSpinner(onView: self.view)
         //Vamos pegar os livros da internet
         BookHandler.fetchFromWeb(pesquisa) { (res) in
             switch (res) {
@@ -30,10 +31,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 //faz reload da table asyncronamento, ou seja, em varias threads
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                    self.removeSpinner()
                 }
             //Caso tenha erro
             case .error(let description):
                 print(description)
+                self.removeSpinner()
             }
         }
     }
