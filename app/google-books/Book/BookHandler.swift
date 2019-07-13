@@ -16,8 +16,8 @@ enum TaskLoadResponse: Error {
 class BookHandler {
     static func fetchFromWeb(_ pesquisa:String, completion: @escaping (TaskLoadResponse) -> Void) {
         
-//        let serverURL = "https://booksgoglee.herokuapp.com"
-        let serverURL = "http://192.168.1.58:3000"
+        let serverURL = "https://booksgoglee.herokuapp.com"
+//        let serverURL = "http://192.168.1.58:3000"
         let pesquisaFormatada = pesquisa.replace(string: " ", replacement: "-")
         let BASE_URL:String = "\(serverURL)/books/search/\(pesquisaFormatada)"
         guard let url = URL(string: BASE_URL) else {

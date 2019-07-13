@@ -72,7 +72,7 @@
                                                 <constraint firstItem="M8h-i8-sfR" firstAttribute="top" secondItem="LKq-KG-6ro" secondAttribute="top" constant="20.5" id="kwa-xd-mbk"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="mH0-eY-PJy" firstAttribute="centerY" secondItem="wZk-JI-4yg" secondAttribute="centerY" id="wEf-Mz-2RC"/>
@@ -103,9 +103,8 @@
                                     <navigationItem title="Livros" id="2Ly-K7-99H"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4p-7i-j9G">
-                                <rect key="frame" x="317" y="87" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4p-7i-j9G">
+                                <rect key="frame" x="335" y="87" width="59" height="30"/>
                                 <state key="normal" title="Procurar">
                                     <color key="titleColor" red="0.84313725490000002" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -113,9 +112,11 @@
                                     <action selector="botaoDePesquisar:" destination="d01-W8-OLo" eventType="touchUpInside" id="VSd-hS-zjS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXR-E2-pO7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXR-E2-pO7">
                                 <rect key="frame" x="20" y="87" width="289" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="nhP-X4-M4Y"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -123,10 +124,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KXR-E2-pO7" firstAttribute="leading" secondItem="tMz-4l-QPH" secondAttribute="leading" constant="20" id="8Vb-cE-0pb"/>
+                            <constraint firstItem="tMz-4l-QPH" firstAttribute="trailing" secondItem="L4p-7i-j9G" secondAttribute="trailing" constant="20" id="IbP-zg-ESv"/>
                             <constraint firstItem="6fD-Uc-TZD" firstAttribute="top" secondItem="cdV-sP-NM9" secondAttribute="bottom" constant="40" id="JJ9-0v-Kqz"/>
+                            <constraint firstItem="L4p-7i-j9G" firstAttribute="leading" secondItem="KXR-E2-pO7" secondAttribute="trailing" constant="26" id="M25-2Z-PUW"/>
+                            <constraint firstItem="L4p-7i-j9G" firstAttribute="top" secondItem="tMz-4l-QPH" secondAttribute="top" constant="43" id="N92-ek-y4P"/>
                             <constraint firstItem="6fD-Uc-TZD" firstAttribute="trailing" secondItem="tMz-4l-QPH" secondAttribute="trailing" id="eME-kZ-Sfg"/>
                             <constraint firstItem="cdV-sP-NM9" firstAttribute="trailing" secondItem="tMz-4l-QPH" secondAttribute="trailing" id="ibT-Q0-4Xt"/>
                             <constraint firstItem="cdV-sP-NM9" firstAttribute="top" secondItem="tMz-4l-QPH" secondAttribute="top" id="nUL-x8-jZx"/>
+                            <constraint firstItem="KXR-E2-pO7" firstAttribute="top" secondItem="tMz-4l-QPH" secondAttribute="top" constant="43" id="nya-Hl-vK1"/>
                             <constraint firstItem="6fD-Uc-TZD" firstAttribute="leading" secondItem="tMz-4l-QPH" secondAttribute="leading" id="umd-6x-fUX"/>
                             <constraint firstAttribute="bottom" secondItem="6fD-Uc-TZD" secondAttribute="bottom" id="w1d-VK-HMk"/>
                             <constraint firstItem="cdV-sP-NM9" firstAttribute="leading" secondItem="tMz-4l-QPH" secondAttribute="leading" id="xKy-UK-EKA"/>

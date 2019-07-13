@@ -12,7 +12,6 @@ import UIKit
 extension UIImageView {
     public func imageFromServerURL(urlString: String, completion: @escaping (String?, Error?) -> Void) {
         self.image = nil
-        print(urlString)
         let urlStringNew = urlString.replacingOccurrences(of: " ", with: "%20")
         URLSession.shared.dataTask(with: NSURL(string: urlStringNew)! as URL, completionHandler: { (data, response, error) -> Void in
             

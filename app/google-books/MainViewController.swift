@@ -34,7 +34,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-//                self.tableView.reloadData()
             case .error(let description):
                 print(description)
             }
@@ -61,7 +60,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             guard let res:String = res else {
                 return
             }
-            print(res)
         }
         
         //pegando nome do livro na da celula da table
