@@ -19,6 +19,6 @@ struct Book: Codable {
     var language:String?
     var id:String?
     var link:URL?
-    var thumbnail:URL //imagem
+    var thumbnail:URL? //imagem
 }
 

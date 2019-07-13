@@ -7,9 +7,6 @@
 //
 import UIKit
 
-
-
-
 class MainViewController: UIViewController, UITableViewDelegate {
     
     //Search Bar

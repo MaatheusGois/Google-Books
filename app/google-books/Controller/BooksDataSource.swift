@@ -25,14 +25,19 @@ class BooksDataSource: NSObject, UITableViewDataSource {
         //Criando a nossa celula modificada
         let cell = tableView.dequeueReusableCell(withIdentifier: "PrototypeCell") as! BookCell
         
+        var urlString = ""
         //pegando a URL e transformando em String
-        let urlString = "\(books[indexPath.row].thumbnail)"
-        //colocando imagem do livro na imagem da celula da table
-        cell.imagem.imageFromServerURL(urlString: urlString) { (res, err) in
-            if (err != nil) {
-                print(err as Any)
+        if books[indexPath.row].thumbnail != nil {
+            urlString = "\(books[indexPath.row].thumbnail as! URL))"
+            //colocando imagem do livro na imagem da celula da table
+            cell.imagem.imageFromServerURL(urlString: urlString) { (res, err) in
+                if (err != nil) {
+                    print(err as Any)
+                }
             }
         }
+       
+        
         
         //pegando nome do livro na da celula da table
         cell.nome.text = books[indexPath.row].title

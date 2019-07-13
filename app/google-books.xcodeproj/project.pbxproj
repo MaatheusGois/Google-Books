@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8607473722D9BAFB005B6DA7 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		8607473722D9BAFB005B6DA7 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookCell.swift; path = ../BookCell.swift; sourceTree = "<group>"; };
 		864B42BA22D98EE2000EF81E /* google-books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "google-books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		864B42BD22D98EE2000EF81E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864B42C222D98EE2000EF81E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,9 @@
 		8607473622D9BAEB005B6DA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8607473722D9BAFB005B6DA7 /* BookCell.swift */,
+				86FB925222DA6D0F0050482D /* Book */,
+				864B42C122D98EE2000EF81E /* Main.storyboard */,
+				864B42C622D98EE5000EF81E /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,9 +96,7 @@
 				8607473622D9BAEB005B6DA7 /* View */,
 				8607473522D9BADB005B6DA7 /* Controller */,
 				8607473422D9BACC005B6DA7 /* Model */,
-				864B42C122D98EE2000EF81E /* Main.storyboard */,
 				864B42C422D98EE5000EF81E /* Assets.xcassets */,
-				864B42C622D98EE5000EF81E /* LaunchScreen.storyboard */,
 				864B42C922D98EE5000EF81E /* Info.plist */,
 			);
 			path = "google-books";
@@ -107,6 +107,14 @@
 			children = (
 				864B42CF22D99245000EF81E /* Book.swift */,
 				864B42D122D9925D000EF81E /* BookHandler.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		86FB925222DA6D0F0050482D /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				8607473722D9BAFB005B6DA7 /* BookCell.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";
