@@ -53,16 +53,18 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PrototypeCell") as! BookCell
-        let string = "\(books[indexPath.row].thumbnail)"
-        cell.imagem.imageFromServerURL(urlString: string) { (res, err) in
+        
+        
+        let urlString = "\(books[indexPath.row].thumbnail)"
+        //colocando imagem do livro na imagem da celula da table
+        cell.imagem.imageFromServerURL(urlString: urlString) { (res, err) in
             guard let res:String = res else {
                 return
             }
             print(res)
         }
-            
         
-        //pegando nome do livro e colocando descricao da celula da table
+        //pegando nome do livro na da celula da table
         cell.nome.text = books[indexPath.row].title
         
         //pegando tipo, se é livro ou nao e add e colocando descricao da celula da table
@@ -75,5 +77,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
 }

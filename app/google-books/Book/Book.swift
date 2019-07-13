@@ -10,14 +10,14 @@ import Foundation
 
 
 struct Book: Codable {
-    var title:String
-    var authors:[String]
-    var printType:String //Diz se é Book ou magazine
-    var publishedDate:String
-    var description:String
-    var pageCount:Int
-    var language:String
-    var id:String
-    var link:URL
+    var title:String?
+    var authors:[String]?
+    var printType:String? //Diz se é Book ou magazine
+    var publishedDate:String?
+    var description:String?
+    var pageCount:Int?
+    var language:String?
+    var id:String?
+    var link:URL?
     var thumbnail:URL //imagem
 }
