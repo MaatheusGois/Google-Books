@@ -22,6 +22,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             return
         }
         self.showSpinner(onView: self.view)
+        self.dismissKeyboard()
         //Vamos pegar os livros da internet
         BookHandler.fetchFromWeb(pesquisa) { (res) in
             switch (res) {
